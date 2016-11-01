@@ -20,6 +20,11 @@
 		4AA29DA01DB9F48800AA3E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA29D9E1DB9F48800AA3E00 /* LaunchScreen.storyboard */; };
 		4AA29DAB1DB9F48800AA3E00 /* ZJActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA29DAA1DB9F48800AA3E00 /* ZJActionSheetTests.m */; };
 		4AA29DB61DB9F48800AA3E00 /* ZJActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA29DB51DB9F48800AA3E00 /* ZJActionSheetUITests.m */; };
+		4ABE26771DC8837E008F5BDF /* ZJImageOnlyHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE266D1DC8837E008F5BDF /* ZJImageOnlyHUDView.m */; };
+		4ABE26781DC8837E008F5BDF /* ZJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE26701DC8837E008F5BDF /* ZJProgressHUD.m */; };
+		4ABE26791DC8837E008F5BDF /* ZJProgressHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE26721DC8837E008F5BDF /* ZJProgressHUDView.m */; };
+		4ABE267A1DC8837E008F5BDF /* ZJTextAndImageHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE26741DC8837E008F5BDF /* ZJTextAndImageHUDView.m */; };
+		4ABE267B1DC8837E008F5BDF /* ZJTextOnlyHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE26761DC8837E008F5BDF /* ZJTextOnlyHUDView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,17 @@
 		4AA29DB11DB9F48800AA3E00 /* ZJActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA29DB51DB9F48800AA3E00 /* ZJActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJActionSheetUITests.m; sourceTree = "<group>"; };
 		4AA29DB71DB9F48800AA3E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ABE266C1DC8837E008F5BDF /* ZJImageOnlyHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJImageOnlyHUDView.h; sourceTree = "<group>"; };
+		4ABE266D1DC8837E008F5BDF /* ZJImageOnlyHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJImageOnlyHUDView.m; sourceTree = "<group>"; };
+		4ABE266E1DC8837E008F5BDF /* ZJPrivateHUDProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPrivateHUDProtocol.h; sourceTree = "<group>"; };
+		4ABE266F1DC8837E008F5BDF /* ZJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJProgressHUD.h; sourceTree = "<group>"; };
+		4ABE26701DC8837E008F5BDF /* ZJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJProgressHUD.m; sourceTree = "<group>"; };
+		4ABE26711DC8837E008F5BDF /* ZJProgressHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJProgressHUDView.h; sourceTree = "<group>"; };
+		4ABE26721DC8837E008F5BDF /* ZJProgressHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJProgressHUDView.m; sourceTree = "<group>"; };
+		4ABE26731DC8837E008F5BDF /* ZJTextAndImageHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTextAndImageHUDView.h; sourceTree = "<group>"; };
+		4ABE26741DC8837E008F5BDF /* ZJTextAndImageHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTextAndImageHUDView.m; sourceTree = "<group>"; };
+		4ABE26751DC8837E008F5BDF /* ZJTextOnlyHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTextOnlyHUDView.h; sourceTree = "<group>"; };
+		4ABE26761DC8837E008F5BDF /* ZJTextOnlyHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTextOnlyHUDView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,7 @@
 		4AA29D8F1DB9F48800AA3E00 /* ZJActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				4ABE266B1DC8837E008F5BDF /* ZJProgressHUD */,
 				4AA29D931DB9F48800AA3E00 /* AppDelegate.h */,
 				4AA29D941DB9F48800AA3E00 /* AppDelegate.m */,
 				4AA29D961DB9F48800AA3E00 /* ViewController.h */,
@@ -187,6 +204,24 @@
 				4AA29DB71DB9F48800AA3E00 /* Info.plist */,
 			);
 			path = ZJActionSheetUITests;
+			sourceTree = "<group>";
+		};
+		4ABE266B1DC8837E008F5BDF /* ZJProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4ABE266C1DC8837E008F5BDF /* ZJImageOnlyHUDView.h */,
+				4ABE266D1DC8837E008F5BDF /* ZJImageOnlyHUDView.m */,
+				4ABE266E1DC8837E008F5BDF /* ZJPrivateHUDProtocol.h */,
+				4ABE266F1DC8837E008F5BDF /* ZJProgressHUD.h */,
+				4ABE26701DC8837E008F5BDF /* ZJProgressHUD.m */,
+				4ABE26711DC8837E008F5BDF /* ZJProgressHUDView.h */,
+				4ABE26721DC8837E008F5BDF /* ZJProgressHUDView.m */,
+				4ABE26731DC8837E008F5BDF /* ZJTextAndImageHUDView.h */,
+				4ABE26741DC8837E008F5BDF /* ZJTextAndImageHUDView.m */,
+				4ABE26751DC8837E008F5BDF /* ZJTextOnlyHUDView.h */,
+				4ABE26761DC8837E008F5BDF /* ZJTextOnlyHUDView.m */,
+			);
+			path = ZJProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,12 +359,17 @@
 			files = (
 				4A2EB0FF1DC72D11004F2F39 /* ZJActionSheetItem.m in Sources */,
 				4AA29D981DB9F48800AA3E00 /* ViewController.m in Sources */,
+				4ABE26771DC8837E008F5BDF /* ZJImageOnlyHUDView.m in Sources */,
 				4AA29D951DB9F48800AA3E00 /* AppDelegate.m in Sources */,
 				4AA29D921DB9F48800AA3E00 /* main.m in Sources */,
+				4ABE267A1DC8837E008F5BDF /* ZJTextAndImageHUDView.m in Sources */,
 				4A2EB1021DC72D11004F2F39 /* ZJActionSheetButton.m in Sources */,
+				4ABE26781DC8837E008F5BDF /* ZJProgressHUD.m in Sources */,
 				4A2EB1011DC72D11004F2F39 /* ZJActionSheetView.m in Sources */,
 				4A2EB1001DC72D11004F2F39 /* ZJActionSheetTableViewCell.m in Sources */,
+				4ABE267B1DC8837E008F5BDF /* ZJTextOnlyHUDView.m in Sources */,
 				4A2EB1031DC72D11004F2F39 /* ZJActionSheetViewSystem.m in Sources */,
+				4ABE26791DC8837E008F5BDF /* ZJProgressHUDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

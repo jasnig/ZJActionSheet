@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ZJActionSheetView.h"
 #import "ZJActionSheetViewSystem.h"
-
+#import "ZJProgressHUD.h"
 @interface ViewController ()
 
 @end
@@ -40,6 +40,7 @@
 - (void)btnOnClick {
     ZJActionSheetButton *btn = [[ZJActionSheetButton alloc] initWithTitle:@"豆瓣分享" image:[UIImage imageNamed:@"cm2_blogo_douban"] titleColor:[UIColor blackColor] handler:^(ZJActionSheetViewSystem *actionSheet, ZJActionSheetButton *actionSheetButton) {
         NSLog(@"点击了豆瓣---- ");
+        [ZJProgressHUD showStatus:@"点击了豆瓣---- " andAutoHideAfterTime:1.0];
     }];
     // 文字的大小
 //    btn.textLabel.font = [UIFont systemFontOfSize:12];
@@ -49,21 +50,29 @@
     btn.btnHeight = 70;
     ZJActionSheetButton *btn1 = [[ZJActionSheetButton alloc] initWithTitle:@"QQ好友" image:[UIImage imageNamed:@"cm2_blogo_qq"] titleColor:[UIColor blackColor] handler:^(ZJActionSheetViewSystem *actionSheet, ZJActionSheetButton *actionSheetButton) {
         NSLog(@"点击了QQ好友---- ");
+        [ZJProgressHUD showStatus:@"点击了QQ好友----" andAutoHideAfterTime:1.0];
+
     }];
     btn1.btnHeight = 70;
 
     ZJActionSheetButton *btn2 = [[ZJActionSheetButton alloc] initWithTitle:@"QQ空间" image:[UIImage imageNamed:@"cm2_blogo_qzone"] titleColor:[UIColor blackColor] handler:^(ZJActionSheetViewSystem *actionSheet, ZJActionSheetButton *actionSheetButton) {
         NSLog(@"点击了QQ空间---- ");
+        [ZJProgressHUD showStatus:@"点击了QQ空间----" andAutoHideAfterTime:1.0];
+
     }];
     btn2.btnHeight = 70;
 
     ZJActionSheetButton *btn3 = [[ZJActionSheetButton alloc] initWithTitle:@"微信好友" image:[UIImage imageNamed:@"cm2_blogo_weixin"] titleColor:[UIColor blackColor] handler:^(ZJActionSheetViewSystem *actionSheet, ZJActionSheetButton *actionSheetButton) {
         NSLog(@"点击了微信好友---- ");
+        [ZJProgressHUD showStatus:@"点击了微信好友----" andAutoHideAfterTime:1.0];
+
     }];
     btn3.btnHeight = 70;
 
     ZJActionSheetButton *btn4 = [[ZJActionSheetButton alloc] initWithTitle:@"可以设置conerRadius和leftAndRighMargin为0" image:nil titleColor:[UIColor blackColor] handler:^(ZJActionSheetViewSystem *actionSheet, ZJActionSheetButton *actionSheetButton) {
         NSLog(@"点击了测试5---- ");
+        [ZJProgressHUD showStatus:@"点击了测试5----" andAutoHideAfterTime:1.0];
+
     }];
     
     ZJActionSheetViewSystem *actionSheet = [[ZJActionSheetViewSystem alloc] initWithTitle:@"这是提示文字" subtitle:@"这可以是详细描述的一段文字一段文字一段文字一段文字" actionSheetButtons:@[btn, btn1, btn3, btn4]];
@@ -85,6 +94,8 @@
     
     ZJActionSheetItem *item1 = [[ZJActionSheetItem alloc] initWithTitle:@"分享" image:[UIImage imageNamed:@"cm2_blogo_douban"] handler:^(ZJActionSheetView *actionSheet) {
         NSLog(@"点击了分享");
+        [ZJProgressHUD showStatus:@"点击了分享" andAutoHideAfterTime:1.0];
+
     }];
     item1.contentAlignment = ZJActionSheetItemContentAlignmentLeft;
     item1.itemHeight = 60;
@@ -93,12 +104,16 @@
 
     ZJActionSheetItem *item2 = [[ZJActionSheetItem alloc] initWithTitle:@"点赞" image:[UIImage imageNamed:@"cm2_blogo_qq"] handler:^(ZJActionSheetView *actionSheet) {
         NSLog(@"点击了点赞");
+        [ZJProgressHUD showStatus:@"点击了点赞" andAutoHideAfterTime:1.0];
+
     }];
     item2.contentAlignment = ZJActionSheetItemContentAlignmentCenter;
     item2.itemHeight = 60;
 
     ZJActionSheetItem *item3 = [[ZJActionSheetItem alloc] initWithTitle:@"右边显示" image:nil handler:^(ZJActionSheetView *actionSheet) {
         NSLog(@"点击了右边显示");
+        [ZJProgressHUD showStatus:@"点击了右边显示" andAutoHideAfterTime:1.0];
+
     }];
     item3.contentAlignment = ZJActionSheetItemContentAlignmentRight;
 
